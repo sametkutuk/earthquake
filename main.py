@@ -89,11 +89,11 @@ def kontrol_et():
         except Exception as e:
             print(f"Hata: {str(e)}")
 
-        await asyncio.sleep(20)
+        sleep(20)
 
 # Ana fonksiyonu ekleyin
-async def main():
-    await kontrol_et()  # kontrol_et fonksiyonunu çağır
+def main():
+    kontrol_et()  # kontrol_et fonksiyonunu çağır
 
 if __name__ == "__main__":
     asyncio.run(main())  # Asenkron fonksiyonu çalıştır
