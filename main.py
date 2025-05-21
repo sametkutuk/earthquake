@@ -89,7 +89,7 @@ def kontrol_et():
         except Exception as e:
             print(f"Hata: {str(e)}")
 
-        sleep(20)
+        time.sleep(20)
 
 # Ana fonksiyonu ekleyin
 def main():
