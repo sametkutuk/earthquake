@@ -8,13 +8,13 @@ BOT_TOKEN = "7593547471:AAFeCSNinanmIfU3KIuiZwS2YHiQDWMyRJo"
 CHAT_ID = "-1002500404506"
 gonderilen_deprem_imzalari = set()  # Küme tanımı
 
-async def kontrol_et():
+ def kontrol_et():
     global gonderilen_deprem_imzalari
     bot = Bot(token=BOT_TOKEN)
 
     # Test mesajı
     try:
-        await bot.send_message(chat_id=CHAT_ID, text="✅ Deprem botu başlatıldı!")
+         bot.send_message(chat_id=CHAT_ID, text="✅ Deprem botu başlatıldı!")
     except Exception as e:
         print(f"Bot test mesajı hatası: {e}")
         return
