@@ -89,7 +89,6 @@ def kontrol_et():
         except Exception as e:
             print(f"Hata: {str(e)}")
 
-        await asyncio.sleep(20)
 
 # Ana fonksiyonu ekleyin
 def main():
