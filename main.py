@@ -82,7 +82,7 @@ def kontrol_et():
                         f"📍 Derinlik: {deprem['depth']} km\n"
                         f"🌐 Koordinatlar: {deprem['lat']}, {deprem['lon']}"
                     )
-                    await bot.send_message(chat_id=CHAT_ID, text=mesaj)
+                    bot.send_message(chat_id=CHAT_ID, text=mesaj)
                     gonderilen_deprem_imzalari.add(imza)
                     print(f"Bildirim gönderildi: {imza}")
 
